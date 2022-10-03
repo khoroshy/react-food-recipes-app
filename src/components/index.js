@@ -1,0 +1,9 @@
+export {default as Header} from './Header/Header';
+export {default as Footer} from './Footer/Footer';
+export {default as Random} from './Random/Random';
+export {default as Popular} from './Popular/Popular';
+export {default as Veg} from './Veg/Veg';
+export {default as Book} from './Book/Book';
+export {default as Search} from './Search/Search';
+export {default as Button} from './Button/Button';
+export {default as Success} from './Success/Success';

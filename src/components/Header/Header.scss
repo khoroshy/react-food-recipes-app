@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0rem 5rem;
+    &__logo{
+        max-width: 8rem;
+    }
+    &__menu{
+        display: flex;
+        gap: 1rem;
+    }
+    &__search{
+        width: 20rem;
+        height: 2.4rem;
+        padding: 1rem 1rem;
+        background: #F0F1EC;
+        border-radius: 2rem;
+        border: none;
+        font-family: 'Inter Tight', sans-serif;
+        &::placeholder{
+            font-family: 'Inter Tight', sans-serif;
+        }
+        &:active{
+            border: none;
+        }
+    }
+}

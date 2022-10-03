@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+    margin: 2rem 0rem 1rem;
+    &__logo{
+        max-width: 8rem;
+        margin: 0rem 0rem 0.4rem;
+    }
+    &__logo-heading{
+        max-width: 16rem;
+        margin: 0rem 0rem 1rem;
+    }
+    &__icons{
+        display: flex;
+        gap: 1rem;
+    }
+    &__ico{
+        max-width: 1.5rem;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        &:last-child{
+            align-items: flex-end;
+        }
+    }
+}

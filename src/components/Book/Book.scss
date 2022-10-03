@@ -1,0 +1,56 @@
+.book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 0rem 1rem;
+    @media (max-width: 912px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 912px) {
+            order: 2;
+            align-items: center;
+        }
+    }
+    &__sub-heading{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    &__heading{
+        font-weight: 500;
+        font-size: 42px;
+        margin: 0rem 0rem 2rem;
+    }
+    &__statistics{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem 0rem 2rem;
+    }
+    &__stat-item{
+        width: 10rem;
+        text-align: left;
+    }
+    &__num{
+        font-weight: 600;
+        font-size: 32px;
+        color:#75C85E;
+    }
+    &__img{
+        max-width: 600px;
+        overflow: hidden;
+        @media (max-width: 912px) {
+            max-width: 75%;
+            order: 1;
+        }
+    }
+    &__btn{
+        @media (max-width: 912px) {
+            width: 200px;
+        }
+    }
+}

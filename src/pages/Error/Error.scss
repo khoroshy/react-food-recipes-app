@@ -1,0 +1,24 @@
+.error{
+    margin: 0rem 0rem 8rem;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    &__img{
+        max-width: 300px;
+    }
+    &__message{
+        text-align: center;
+        color: var(--white);
+    }
+    &__sub-message{
+        text-align: center;
+        color: var(--text);
+    }
+    &__btn{
+        min-width: 12rem;
+    }
+} 

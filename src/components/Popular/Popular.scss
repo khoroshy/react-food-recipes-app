@@ -1,0 +1,42 @@
+.popular{
+    margin: 0rem 0rem 1rem;
+    @media (max-width: 890px) {
+        margin: 0rem 0rem 2rem;
+    }
+    &__card{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__img{
+        position: relative;
+        border-radius: 2rem;
+    }
+    &__title{
+        position: absolute;
+        top: 75%;
+        left: 5%;
+        @media (max-width: 890px) {
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @media (max-width: 739px) {
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @media (max-width: 615px) {
+            text-align: center;
+            font-size: 0.8rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @media (max-width: 520px) {
+            display: none;
+        }
+    }
+}

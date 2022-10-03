@@ -1,0 +1,95 @@
+.recipe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0rem 12rem;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    &__img{
+        border-radius: 2rem;
+    }
+    &__noImg{
+        border-radius: 2rem;
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 36rem;
+    }
+    &__title{
+        font-size: 2rem;
+        margin: 0rem 0rem 1rem;
+    }
+    &__icons{
+        display: flex;
+        gap: 1rem;
+        margin: 0rem 0rem 1rem;
+    }
+    &__ico{
+        max-width: 2rem;
+    }
+    &__heading{
+        margin: 0rem 0rem 0.5rem;
+    }
+    &__text{
+      margin: 0rem 0rem 1rem;
+    }
+    &__button-container{
+      margin: 0rem 0rem 1rem;
+    }
+}
+
+//Active tab class
+
+.current{
+  background-color: black;
+}
+
+
+// Loader animation
+
+$offset: 187;
+$duration: 1.4s;
+
+.spinner {
+  animation: rotator $duration linear infinite;
+}
+
+@keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.path {
+  stroke-dasharray: $offset;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation:
+    dash $duration ease-in-out infinite, 
+    colors ($duration*4) ease-in-out infinite;
+}
+
+@keyframes colors {
+	0% { stroke: #AEFF96; }
+	25% { stroke: #79EB21; }
+	50% { stroke: #39C33A; }
+	75% { stroke: #00A714; }
+  100% { stroke: #126D34; }
+}
+
+@keyframes dash {
+ 0% { stroke-dashoffset: $offset; }
+ 50% {
+   stroke-dashoffset: $offset/4;
+   transform:rotate(135deg);
+ }
+ 100% {
+   stroke-dashoffset: $offset;
+   transform:rotate(450deg);
+ }
+}

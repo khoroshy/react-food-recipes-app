@@ -1,0 +1,94 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem 2rem;
+    &__heading{
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 0rem 0rem 2rem;
+    }
+    &__label{
+        &:first-child{
+            margin: 1rem 0rem 0rem;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 12rem;
+        gap: 1rem;
+        min-width: 28rem;
+        min-height: 20rem;  
+        background: rgba(255, 255, 255, 0.27);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(19px);
+        border-radius: 1rem;
+        font-family: 'Inter Tight', sans-serif;
+    }
+    &__input{
+        font-family: 'Inter Tight', sans-serif;
+        min-width: 24rem;
+        min-height: 2rem;
+        padding: 10px 10px 10px 10px;
+        background: rgba(142, 228, 102, 0.27);
+        box-shadow: 0px 1px 0px #CBCFD8, inset 0px 2px 10px #73be89;
+        backdrop-filter: blur(19px);
+        border: none;
+        border-radius: 1rem;
+        &::placeholder{
+            color: white;
+        }
+        &::-webkit-autofill{
+            background: none;
+            color: none;
+        }
+    }
+    &__textarea{
+        min-width: 380px;
+        min-height: 100px;
+        resize: none;
+        padding: 10px 10px 10px 10px;
+        margin: 0px 0px 10px; 
+        background: rgba(142, 228, 102, 0.27);
+        box-shadow: 0px 1px 0px #CBCFD8, inset 0px 2px 10px #73be89;
+        backdrop-filter: blur(19px);
+        border: none;
+        border-radius: 1rem;
+        font-family: 'Inter Tight', sans-serif;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+    &__submit{
+        margin: 0rem 0rem 1rem;
+        border-radius: 2rem;
+        height: 2.4rem;
+        width: 12rem;
+        border: none;
+        background: #75C85E;
+        color: white;
+        font-size: 1rem;
+        font-family: 'Inter Tight', sans-serif;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        box-shadow: 0 0 0 2em transparent;
+        transition: all 0.2s linear 0s;
+        &:hover{
+            cursor: pointer;
+            animation: pulse 1s;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #75C85E; }
+          }
+    }
+    &__msg{
+        margin: 0rem 0rem 2rem;
+    }
+}
